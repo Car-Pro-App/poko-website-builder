@@ -23,7 +23,7 @@ Le copilote intelligent pour les professionnels du VO { .h3 }
 
 Découvre une solution pensée pour simplifier ton quotidien et booster ton activité. { .font-size-[--step-1] }
 
-{% image src="/_images/screenshot_2026-09-15_15-17-01-crop.webp" %}
+{% image src="/_images/screenshot_2026-09-15_15-17-01-crop.webp", alt="Tableau de bord principal de l'app", loading="eager" %}
 
 :::
 
