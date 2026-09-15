@@ -8,13 +8,19 @@ name: Accueil
 metadata:
   title: Car-Pro.app — Le copilote intelligent pour les professionnels du VO
   description: Solution tout-en-un pour les professionnels du véhicule d'occasion — photos, stock, annonces, prix du marché, facturation.
+pageStyles: |-
+  @container (width < 90vw) {
+    .how-it-works .fixed-fluid:nth-child(odd) > div:first-child {
+      order: 2;
+    }
+  }
 ---
 
 :::: section {.palette--contrast .bleed-bg .text-center .breathe}
 
 # Car Pro App
 
-Le copilote intelligent pour les professionnels du VO
+Le copilote intelligent pour les professionnels du VO { .h3 }
 ::::
 
 ::: section
@@ -24,32 +30,58 @@ Le copilote intelligent pour les professionnels du VO
 Découvre une solution pensée pour simplifier ton quotidien et booster ton activité.
 :::
 
-{% sectionGrid  %}
+{% sectionBuilder class="how-it-works width-prose flow space:--py-section" %}
 {% sectionHeader  %}
 ## Comment ça marche
 
 **5' chrono pour ajouter un véhicule à ton stock et publier ton annonce** { .size-h4 .palette--pop }
-
 {% endsectionHeader %}
-{% grid gap="2rem", type="switcher" %}
-{% gridItem  %}
+{% twoColumns fixedSide="fixedRight", type="fixedFluid", class="container" %}
+{% twoColumnsItem  %}
 ### 1. Prends des photos
 
-Toutes les infos du véhicule sont retrouvées automatiquement.
-{% endgridItem %}
-{% gridItem  %}
+Envoie quelques photos des **documents de bord** ainsi que **du véhicule**.
+
+Capture-les directement avec ton smartphone, charge-les depuis tes dossiers ou transfère-les depuis un message Whatsapp.
+
+Les photos dédiées à l'annonce sont **automatiquement séparées** de celles des documents.
+
+**Toutes les infos du véhicule sont retrouvées automatiquement.**
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+{% image src="/_images/screenshot_2026-09-15_13-01-43.webp", width=300 %}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+{% twoColumns fixedSide="fixedRight", type="fixedFluid", class="container" %}
+{% twoColumnsItem  %}
 ### 2. Ajoute à ton stock
 
-Un clic pour ajouter. Suis ton stock en un coup d'œil.
-{% endgridItem %}
-{% gridItem  %}
+Tu achètes le véhicule? En **un clic**, ajoute-le à ton stock avec toutes les infos techniques et administratives le concernant.
+
+Ajoute ton prix d'achat et de vente, et **suis ton stock en un coup d'œil**.
+
+On te propose même un **comparateur intégré** pour vérifier les prix de véhicules similaires sur le marché.
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+{% image src="/_images/screenshot_2026-09-15_13-01-43.webp", width=300 %}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+{% twoColumns fixedSide="fixedRight", type="fixedFluid", class="container" %}
+{% twoColumnsItem  %}
 ### 3. Ton annonce est prête!
 
-Vérifie et clique sur « Envoyer ».
-{% endgridItem %}
-{% endgrid %}
+**On rédige ton annonce avec ton style habituel** et on prépare tout pour que tu n'aies plus qu'à cliquer sur "Envoyer".
 
-{% endsectionGrid %}
+Ton annonce est automatiquement publiée sur **toutes tes plateformes préférées** en un clic.
+
+Tu souhaites modifier le prix par la suite? Facile! Modifie-le directement depuis l'application et il sera mis à jour sur toutes les plateformes.
+{% endtwoColumnsItem %}
+{% twoColumnsItem  %}
+{% image src="/_images/screenshot_2026-09-15_13-01-43.webp", width=300 %}
+{% endtwoColumnsItem %}
+{% endtwoColumns %}
+
+{% endsectionBuilder %}
 
 ::: section
 
@@ -63,14 +95,18 @@ Vérifie et clique sur « Envoyer ».
 - …
 :::
 
-:::: section {.palette--pop-contrast .box .width-prose .text-center .breathe}
+:::: section {.palette--pop-contrast .box .width-prose .text-center .breathe }
 
-## Intéressé ?
+## **Contacte-nous vite pour réserver ta place!** { .h3 }
 
+L'application sera bientôt disponible pour une sélection restreinte de marchands en accès privé.
+
+<div class="box prose breathe-section h4">
 {% link url="tel:+32472944611", type="external" %}+32 472 944 611{% endlink %}
 
-{% link url=env.email, type="email" %}{% endlink %}
+{% htmlPartial "email-link.njk" %}
+</div>
 
-FORMULAIRE DE CONTACT
+{% htmlPartial "contact-form.njk" %}
 
 ::::

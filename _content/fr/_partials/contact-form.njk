@@ -1,0 +1,36 @@
+<form method="post" action="#" class="contact-form box prose">
+    <label for="name">Prénom Nom</label>
+    <input type="text" id="name" name="name" autocomplete="name" required>
+    <label for="company">Entreprise</label>
+    <input type="text" id="company" name="company" autocomplete="organization" required>
+    <label for="phone">Téléphone</label>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
+    <label for="new_arrivals">Nouvelles rentrées mensuelles</label>
+    <input type="number" id="new_arrivals" name="new_arrivals" min="0" required>
+    <label for="stock">Véhicules en stock</label>
+    <input type="number" id="stock" name="stock" min="0" required>
+    <button type="submit">Envoyer</button>
+</form>
+<style>
+    .contact-form input[required]::after {
+        content: ' *';
+    }
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .contact-form label {
+        text-align: right;
+    }
+    .contact-form input {
+      border-radius: var(--radius-token);
+    }
+    .contact-form button {
+        grid-column: 1 / -1;
+        margin-block-start: 0.5rem;
+    }
+</style>

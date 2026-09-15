@@ -6,7 +6,7 @@
   /* --color-border: var(); */
   /* --color-border: var(); */
   /* --color-outline: var(); */
-  --color-text-decoration: var(--color-pop);
+  /* --color-text-decoration: var(--color-pop); */
   /* --color-text-emphasis: var(); */
   /* --color-shadow has to be used manually in box-shadow definitions */
   /*--color-shadow: var();*/
@@ -68,11 +68,11 @@
 
   /* --radius-round: 1e5px; */
   /*--radius-body: 0rem;*/
-  /*--radius-section: 2rem;*/
+  --radius-section: 1rem;
   --radius-prose: 1rem;
   --radius-featured: 1rem;
-  --radius-card: var(--step-4);
-  --radius-token: var(--radius-round);
+  --radius-card: 1rem;
+  --radius-token: 0.5rem;
 
   --thick-body: 5px;
   --thick-section: 5px;
@@ -131,9 +131,9 @@
   /* --text-underline-offset: 0.15em; */
   /* --fit: cover; */
 
-  --deco-thickness: 0.5em;
-  --deco-thickness-hover: 1.2em;
-  --deco-offset: -0.2em;
-  --deco-offset-hover: -0.9em;
-  --deco-transition-duration: 0.2s;
+  /* --deco-thickness: 0.5em; */
+  /* --deco-thickness-hover: 1.2em; */
+  /* --deco-offset: -0.2em; */
+  /* --deco-offset-hover: -0.9em; */
+  /* --deco-transition-duration: 0.2s; */
 }
