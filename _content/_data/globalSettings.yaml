@@ -5,3 +5,7 @@ languages:
     status: published
     keepUrlPrefix: false
     name: Français
+    isWebsiteDefault: true
+collections: []
+newTabLinkTypes:
+  - external

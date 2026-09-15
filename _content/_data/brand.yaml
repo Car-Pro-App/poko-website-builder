@@ -1,0 +1,60 @@
+ctxCssImport: true
+inlineAllStyles: true
+widthsContexts:
+  - name: main
+    max: 80rem
+    prose: 50rem
+fontStacksContexts:
+  - name: main
+    body:
+      native: neo-grotesque
+      custom: Roboto
+    heading:
+      native: neo-grotesque
+      custom: Roboto
+    code:
+      native: monospace-code
+customFontsImport:
+  - name: Roboto
+    source:
+      type: fontsource
+      name: Roboto Flex
+      weights:
+        - '400'
+        - '100'
+        - '200'
+        - '300'
+        - '500'
+        - '600'
+        - '700'
+        - '800'
+        - '900'
+      styles:
+        - normal
+        - italic
+      subsets:
+        - latin
+typeScales:
+  - name: main
+    minFontSize: 18
+    maxFontSize: 20
+    minTypeScale: 1.2
+    maxTypeScale: 1.25
+colors:
+  - name: navy
+    value: '#00395c'
+  - name: blue
+    value: '#004799'
+  - name: aqua
+    value: '#7ac8ce'
+  - name: white
+    value: '#ffffff'
+palettes:
+  - name: main
+    read: navy
+    tone: navy
+    pop: blue
+    neutral: white
+styleContexts:
+  - name: main
+    value: ctx
