@@ -19,18 +19,27 @@
     }
     .contact-form {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 0.5rem;
         align-items: center;
     }
     .contact-form label {
-        text-align: right;
+        text-align: left;
     }
     .contact-form input {
       border-radius: var(--radius-token);
+      min-inline-size: 0;
     }
     .contact-form button {
         grid-column: 1 / -1;
         margin-block-start: 0.5rem;
+    }
+    @media (min-width: 50rem) {
+        .contact-form {
+            grid-template-columns: 1fr 1fr;
+        }
+        .contact-form label {
+            text-align: right;
+        }
     }
 </style>
