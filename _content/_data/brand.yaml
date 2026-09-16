@@ -52,9 +52,14 @@ colors:
 palettes:
   - name: main
     read: navy
-    tone: navy
+    tone: aqua
     pop: blue
     neutral: white
+  - name: aqua
+    read: navy
+    tone: white
+    pop: blue
+    neutral: aqua
 styleContexts:
   - name: main
     value: ctx

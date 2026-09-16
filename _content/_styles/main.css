@@ -25,7 +25,7 @@
   /* --- A --- */
   /* --color-text__a: var(); */
   /* --color-bg__a: transparent; */
-  /* --color-text__a--hover: var(--color-pop-theme); */
+  --color-text__a--hover: var(--color-tone);
   /* --color-bg__a--hover: var(); */
 
   /* --- BUTTON --- */

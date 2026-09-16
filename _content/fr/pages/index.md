@@ -12,7 +12,7 @@ metadata:
 
 :::: section {.palette--contrast .bleed-bg .text-center .breathe}
 
-# Car Pro App
+# _Car_-Pro._app_
 
 Le copilote intelligent pour les professionnels du VO { .h3 }
 ::::
@@ -46,7 +46,7 @@ Les photos dédiées à l'annonce sont **automatiquement séparées** de celles 
 **Toutes les infos du véhicule sont retrouvées automatiquement.**
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/screenshot_2026-09-15_13-01-43.webp", width=300 %}
+{% image src="/_images/screen-mobile-add_photos.webp", alt="Ajoute des photos. L'application détecte automatiquement les documents.", width=300 %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% twoColumns fixedSide="fixedRight", type="fixedFluid", class="container" %}
@@ -60,7 +60,13 @@ Ajoute ton prix d'achat et de vente, et **suis ton stock en un coup d'œil**.
 On te propose même un **comparateur intégré** pour vérifier les prix de véhicules similaires sur le marché.
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/screenshot_2026-09-15_15-08-16.webp", width=300 %}
+<video controls width="300">
+  <source src="/assets/files/demo-mobile-stock.mp4" type="video/mp4" />
+
+  Download the
+  <a href="/assets/files/demo-mobile-stock.mp4">MP4</a>
+  video.
+</video>
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 {% twoColumns fixedSide="fixedRight", type="fixedFluid", class="container" %}
@@ -80,19 +86,7 @@ Tu souhaites modifier le prix par la suite? Facile! Modifie-le directement depui
 
 {% endsectionBuilder %}
 
-::: section
-
-## Et ce n'est que le début…
-
-- Planification et gestion du stock
-- Suivi du prix d'achat et de vente
-- Analyse des prix du marché
-- Synchronisation Carpass
-- Facturation simplifiée
-- …
-:::
-
-:::: section { #contact-section .palette--pop-contrast .box .width-prose .text-center .breathe }
+:::: section { #contact-section .palette--pop-contrast .box .width-prose .text-center .breathe .px-body }
 
 ## **Contacte-nous vite pour une démonstration gratuite!** { .h3 }
 
@@ -108,6 +102,32 @@ L'application sera bientôt disponible pour une sélection restreinte de marchan
 {% htmlPartial "contact-form.njk" %}
 
 ::::
+
+{% sectionGrid  %}
+{% sectionHeader  %}
+## Et ce n'est qu'un avant-gout...
+{% endsectionHeader %}
+{% grid type="switcher", widthWrap="24.9rem", class="width-prose" %}
+{% gridItem  %}
+### Déjà opérationnel
+
+- Planification et gestion du stock
+- Suivi du prix d'achat et de vente
+- Affiche A4 imprimable pour le véhicule
+- Synchronisation Carpass
+- Facturation simplifiée
+- …
+{% endgridItem %}
+{% gridItem  %}
+### À Venir
+
+- Analyse des prix du marché
+- Un Trade inter-marchands
+- …
+{% endgridItem %}
+{% endgrid %}
+
+{% endsectionGrid %}
 
 {% partial "galery-screens.md" %}
 
