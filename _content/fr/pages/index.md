@@ -80,7 +80,7 @@ Ton annonce est automatiquement publiée sur **toutes tes plateformes préféré
 Tu souhaites modifier le prix par la suite? Facile! Modifie-le directement depuis l'application et il sera mis à jour sur toutes les plateformes.
 {% endtwoColumnsItem %}
 {% twoColumnsItem  %}
-{% image src="/_images/screenshot_2026-09-15_15-13-08.webp", width=300 %}
+{% image src="/_images/ads-publishing-preview.webp", alt="preview publication multi-plateformes", width=300 %}
 {% endtwoColumnsItem %}
 {% endtwoColumns %}
 
